@@ -1,0 +1,54 @@
+body{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-card {
+    width: 885px;
+    height: 250px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+}
+.profile-pic {
+    width: 34px;
+    height: 34px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.small-circle {
+    width: 10px;
+    height: 10px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.profile-bar {
+    background: #AE445A;
+    border-radius: 41px;
+    padding: 5px 15px;
+    text-align: center;
+    color: white;
+}
+
+
+body {
+    background-color: #F2F2F2;
+}
+.login-container {
+    max-width: 540px;
+    background: white;
+    border-radius: 20px;
+    padding: 48px 72px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+    background-color: #8C1837;
+    border: none;
+}
