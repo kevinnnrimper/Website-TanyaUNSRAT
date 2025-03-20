@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanya UNSRAT</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+   
+    <nav class="navbar navbar-expand-lg bg-white py-4 shadow-sm">
+        <div class="container">
+            <!-- Brand / Logo -->
+            <a class="navbar-brand fw-bold text-danger fs-3" href="index.html">
+                <span style="font-weight: 700;">Tanya</span>
+                <span style="font-weight: 900;">UNSRAT</span>
+            </a>
+    
+            <!-- Menu Kanan -->
+            <div class="d-flex align-items-center gap-3">
+                <a class="btn btn-outline-dark rounded-pill px-4" href="login.html">Masuk</a>
+                <a class="btn btn-outline-dark rounded-pill px-4" href="daftar.html">Daftar</a>
+                <a class="btn btn-danger text-white rounded-pill px-4" href="page.html">Ajukan Pertanyaan</a>
+    
+                <!-- Foto Profil -->
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://placehold.co/40x40" alt="User avatar" class="rounded-circle" height="40" width="40">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                        <li><a class="dropdown-item" href="profile.html">Profil</a></li>
+                        <li><a class="dropdown-item" href="settings.html">Pengaturan</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="logout.html">Keluar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container flex-grow-1 d-flex justify-content-center align-items-center">
+        <div class="w-75 bg-white p-4 rounded shadow-sm">
+            <h5 class="mb-3">Ajukan Pertanyaan</h5>
+            <form>
+                <div class="mb-3">
+                    <label for="category" class="form-label">Kategori Pertanyaan</label>
+                    <select class="form-select" id="category" required>
+                        <option value="" disabled selected>Pilih kategori...</option>
+                        <option value="akademik">Akademik</option>
+                        <option value="administrasi">Administrasi</option>
+                        <option value="umum">Umum</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="question" class="form-label">Pertanyaan</label>
+                    <textarea class="form-control" id="question" rows="4" placeholder="Tulis pertanyaan Anda di sini..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-100 bg-white text-center py-3 mt-auto">
+        <div class="d-flex justify-content-between w-75 mx-auto">
+            <div class="text-danger fw-bold fs-4">Tanya <span class="fw-bolder">UNSRAT</span></div>
+            <div class="fs-6">info@tanyaunsrat.ac.id</div>
+        </div>
+        <div class="fs-6 mt-2">&copy; 2025 TanyaUNSRAT</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

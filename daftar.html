@@ -16,24 +16,48 @@
         <div class="card p-5 shadow-lg w-75" style="max-width: 500px; border-radius: 20px;">
             <h3 class="text-center fw-bold">Daftar</h3>
             <form>
+    
+                <!-- Input Username -->
                 <div class="mb-3">
-                    <label for="nim" class="form-label">NIM</label>
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Masukkan Username">
+                </div>
+    
+                <!-- Pilihan Kategori -->
+                <div class="mb-3">
+                    <label class="form-label">Kategori</label>
+                    <select class="form-select" id="kategori">
+                        <option value="mahasiswa">Mahasiswa</option>
+                        <option value="dosen">Dosen</option>
+                    </select>
+                </div>
+
+                <!-- Input NIM -->
+                <div class="mb-3">
+                    <label for="nim" class="form-label">NIM / NIK</label>
                     <input type="text" class="form-control" id="nim" placeholder="Masukkan NIM">
                 </div>
+    
+                <!-- Input Password -->
                 <div class="mb-3">
                     <label for="password" class="form-label d-flex justify-content-between">
                         <span>Password</span>
-                        <a href="#" class="text-primary text-decoration-none">Lupa Password?</a>
                     </label>
                     <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
+                </div> 
+    
+                <!-- Konfirmasi Password -->
+                <div class="mb-4">
+                    <label for="confirm-password" class="form-label">Konfirmasi Password</label>
+                    <input type="password" class="form-control" id="confirm-password" placeholder="Masukkan Ulang Password">
                 </div>
-                <button type="submit" class="btn btn-danger w-100">Masuk Sekarang</button>
+                
+                <!-- Tombol Submit -->
+                <button type="submit" class="btn btn-danger w-100">Daftar Sekarang</button>
             </form>
-            <div class="text-center mt-3">
-                <span class="text-secondary">Belum ada akun?</span>
-            </div>
         </div>
     </div>
+    
     
     
 </body>
